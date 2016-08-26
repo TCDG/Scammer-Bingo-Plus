@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2016/08/24 19:44:15.089.pas,C:\Users\Adriaan\Documents\RAD Studio\Projects\Unit1.pas=C:\Users\Adriaan\Documents\GitHub\Scammer-Bingo-Plus\Unit1.pas</Transaction>
+    <Transaction>2016/08/24 19:44:15.107.dfm,C:\Users\Adriaan\Documents\RAD Studio\Projects\Unit1.dfm=C:\Users\Adriaan\Documents\GitHub\Scammer-Bingo-Plus\Unit1.dfm</Transaction>
+    <Transaction>2016/08/24 19:44:37.511.dproj,C:\Users\Adriaan\Documents\RAD Studio\Projects\Project1.dproj=C:\Users\Adriaan\Documents\GitHub\Scammer-Bingo-Plus\pscambingoplus.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
