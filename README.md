@@ -6,4 +6,4 @@ When the scammer says or do one of the things in the list press the button that 
 
 ##Preview
 
-![Alt text](http://i.imgur.com/f0kg6Tn.png "Screenshot")
+![Alt text](http://i.imgur.com/iPl09mO.png "Screenshot")
