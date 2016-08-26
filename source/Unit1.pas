@@ -35,6 +35,8 @@ type
     Label8: TLabel;
     Label9: TLabel;
     Label10: TLabel;
+    btnanydesk: TButton;
+    btngotoassist: TButton;
     procedure Label4Click(Sender: TObject);
     procedure btnlogmeinClick(Sender: TObject);
     procedure btnteamviewerClick(Sender: TObject);
@@ -51,6 +53,8 @@ type
     procedure btniexplorersupportClick(Sender: TObject);
     procedure btniexplorerlogmeinClick(Sender: TObject);
     procedure lblscoreClick(Sender: TObject);
+    procedure btnanydeskClick(Sender: TObject);
+    procedure btngotoassistClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -64,6 +68,13 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TForm1.btnanydeskClick(Sender: TObject);
+begin
+  btnanydesk.Enabled := False;
+  inc(icore);
+  lblscore.Caption := inttostr(icore);
+end;
 
 procedure TForm1.btncmdClick(Sender: TObject);
 begin
@@ -82,6 +93,13 @@ end;
 procedure TForm1.btnfirewalldisabledClick(Sender: TObject);
 begin
   btnfirewalldisabled.Enabled := False;
+  inc(icore);
+  lblscore.Caption := inttostr(icore);
+end;
+
+procedure TForm1.btngotoassistClick(Sender: TObject);
+begin
+  btngotoassist.Enabled := False;
   inc(icore);
   lblscore.Caption := inttostr(icore);
 end;

@@ -547,7 +547,7 @@ object Form1: TForm1
     Top = 423
     Width = 30
     Height = 33
-    Caption = '14'
+    Caption = '16'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWhite
     Font.Height = -27
@@ -560,7 +560,7 @@ object Form1: TForm1
     Top = 464
     Width = 92
     Height = 16
-    Caption = 'Version: 1.0.0.1'
+    Caption = 'Version: 1.0.0.2'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWhite
     Font.Height = -13
@@ -604,9 +604,9 @@ object Form1: TForm1
     end
     object btnlogmein: TButton
       Left = 16
-      Top = 40
+      Top = 25
       Width = 233
-      Height = 65
+      Height = 32
       Caption = 'LogMeIn/Support.me'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
@@ -619,9 +619,9 @@ object Form1: TForm1
     end
     object btnteamviewer: TButton
       Left = 255
-      Top = 40
+      Top = 25
       Width = 160
-      Height = 65
+      Height = 72
       Caption = 'TeamViewer'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
@@ -631,6 +631,36 @@ object Form1: TForm1
       ParentFont = False
       TabOrder = 1
       OnClick = btnteamviewerClick
+    end
+    object btnanydesk: TButton
+      Left = 16
+      Top = 63
+      Width = 114
+      Height = 34
+      Caption = 'AnyDesk'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWhite
+      Font.Height = -21
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 2
+      OnClick = btnanydeskClick
+    end
+    object btngotoassist: TButton
+      Left = 136
+      Top = 63
+      Width = 113
+      Height = 34
+      Caption = 'GotoAssist'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWhite
+      Font.Height = -21
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 3
+      OnClick = btngotoassistClick
     end
   end
   object GroupBox2: TGroupBox
