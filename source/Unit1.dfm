@@ -518,7 +518,7 @@ object Form1: TForm1
   object lblscore: TLabel
     Left = 227
     Top = 423
-    Width = 30
+    Width = 15
     Height = 33
     Caption = '0'
     Font.Charset = DEFAULT_CHARSET
@@ -547,7 +547,7 @@ object Form1: TForm1
     Top = 423
     Width = 30
     Height = 33
-    Caption = '15'
+    Caption = '14'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWhite
     Font.Height = -27
@@ -605,9 +605,9 @@ object Form1: TForm1
     object btnlogmein: TButton
       Left = 16
       Top = 40
-      Width = 129
+      Width = 233
       Height = 65
-      Caption = 'LogMeIn'
+      Caption = 'LogMeIn/Support.me'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -21
@@ -617,25 +617,10 @@ object Form1: TForm1
       TabOrder = 0
       OnClick = btnlogmeinClick
     end
-    object btnsupport: TButton
-      Left = 151
-      Top = 40
-      Width = 129
-      Height = 65
-      Caption = 'Support.me'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -21
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 1
-      OnClick = btnsupportClick
-    end
     object btnteamviewer: TButton
-      Left = 286
+      Left = 255
       Top = 40
-      Width = 129
+      Width = 160
       Height = 65
       Caption = 'TeamViewer'
       Font.Charset = DEFAULT_CHARSET
@@ -644,7 +629,7 @@ object Form1: TForm1
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 2
+      TabOrder = 1
       OnClick = btnteamviewerClick
     end
   end

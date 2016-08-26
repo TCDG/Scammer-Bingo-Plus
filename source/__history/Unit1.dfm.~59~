@@ -515,10 +515,10 @@ object Form1: TForm1
     Font.Style = []
     ParentFont = False
   end
-  object Label6: TLabel
-    Left = 234
+  object lblscore: TLabel
+    Left = 227
     Top = 423
-    Width = 15
+    Width = 30
     Height = 33
     Caption = '0'
     Font.Charset = DEFAULT_CHARSET
@@ -527,9 +527,10 @@ object Form1: TForm1
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
+    OnClick = lblscoreClick
   end
   object Label7: TLabel
-    Left = 255
+    Left = 263
     Top = 423
     Width = 10
     Height = 33
@@ -542,7 +543,7 @@ object Form1: TForm1
     ParentFont = False
   end
   object Label8: TLabel
-    Left = 271
+    Left = 279
     Top = 423
     Width = 30
     Height = 33
@@ -836,6 +837,7 @@ object Form1: TForm1
       Font.Style = []
       ParentFont = False
       TabOrder = 4
+      OnClick = btncmdClick
     end
     object btniexplorersupport: TButton
       Left = 95
@@ -850,6 +852,7 @@ object Form1: TForm1
       Font.Style = []
       ParentFont = False
       TabOrder = 5
+      OnClick = btniexplorersupportClick
     end
     object btniexplorerlogmein: TButton
       Left = 95
@@ -864,6 +867,7 @@ object Form1: TForm1
       Font.Style = []
       ParentFont = False
       TabOrder = 6
+      OnClick = btniexplorerlogmeinClick
     end
   end
 end

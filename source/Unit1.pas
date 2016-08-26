@@ -10,7 +10,6 @@ type
   TForm1 = class(TForm)
     GroupBox1: TGroupBox;
     btnlogmein: TButton;
-    btnsupport: TButton;
     btnteamviewer: TButton;
     Label1: TLabel;
     GroupBox2: TGroupBox;
@@ -38,7 +37,6 @@ type
     Label10: TLabel;
     procedure Label4Click(Sender: TObject);
     procedure btnlogmeinClick(Sender: TObject);
-    procedure btnsupportClick(Sender: TObject);
     procedure btnteamviewerClick(Sender: TObject);
     procedure btntreeClick(Sender: TObject);
     procedure btnnetstatClick(Sender: TObject);
@@ -133,13 +131,6 @@ end;
 procedure TForm1.btnrandomcrapClick(Sender: TObject);
 begin
   btnrandomcrap.Enabled := False;
-  inc(icore);
-  lblscore.Caption := inttostr(icore);
-end;
-
-procedure TForm1.btnsupportClick(Sender: TObject);
-begin
-  btnsupport.Enabled := False;
   inc(icore);
   lblscore.Caption := inttostr(icore);
 end;
