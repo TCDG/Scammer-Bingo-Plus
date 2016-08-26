@@ -15,4 +15,4 @@ When the scammer says or do one of the things in the list press the button that 
 ##Preview 
 Please note that the picture might not be updated to the current version!
 
-![Alt text](http://i.imgur.com/4TMrj5T.png "Screenshot")
+![Alt text](http://i.imgur.com/Gtj3dyr.png "Screenshot")
