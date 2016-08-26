@@ -3,8 +3,8 @@ object Form1: TForm1
   Top = 0
   BorderIcons = [biSystemMenu, biMinimize]
   Caption = 'Scammer Bingo Plus'
-  ClientHeight = 480
-  ClientWidth = 446
+  ClientHeight = 464
+  ClientWidth = 891
   Color = clHotLight
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -488,8 +488,8 @@ object Form1: TForm1
   PixelsPerInch = 96
   TextHeight = 13
   object Label4: TLabel
-    Left = 17
-    Top = 423
+    Left = 16
+    Top = 405
     Width = 81
     Height = 33
     Cursor = crHandPoint
@@ -503,7 +503,7 @@ object Form1: TForm1
     OnClick = Label4Click
   end
   object Label5: TLabel
-    Left = 145
+    Left = 371
     Top = 423
     Width = 76
     Height = 33
@@ -516,7 +516,7 @@ object Form1: TForm1
     ParentFont = False
   end
   object lblscore: TLabel
-    Left = 227
+    Left = 453
     Top = 423
     Width = 15
     Height = 33
@@ -527,10 +527,9 @@ object Form1: TForm1
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    OnClick = lblscoreClick
   end
   object Label7: TLabel
-    Left = 263
+    Left = 489
     Top = 423
     Width = 10
     Height = 33
@@ -543,11 +542,11 @@ object Form1: TForm1
     ParentFont = False
   end
   object Label8: TLabel
-    Left = 279
+    Left = 505
     Top = 423
     Width = 30
     Height = 33
-    Caption = '14'
+    Caption = '16'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWhite
     Font.Height = -27
@@ -556,11 +555,11 @@ object Form1: TForm1
     ParentFont = False
   end
   object Label9: TLabel
-    Left = 347
-    Top = 464
+    Left = 791
+    Top = 444
     Width = 92
     Height = 16
-    Caption = 'Version: 1.0.0.1'
+    Caption = 'Version: 1.0.0.3'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWhite
     Font.Height = -13
@@ -570,7 +569,7 @@ object Form1: TForm1
   end
   object Label10: TLabel
     Left = 8
-    Top = 462
+    Top = 444
     Width = 111
     Height = 16
     Caption = 'Made by Inforcer25'
@@ -581,11 +580,26 @@ object Form1: TForm1
     Font.Style = []
     ParentFont = False
   end
+  object Label6: TLabel
+    Left = 116
+    Top = 405
+    Width = 106
+    Height = 33
+    Cursor = crHandPoint
+    Caption = 'YouTube'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clRed
+    Font.Height = -27
+    Font.Name = 'Tahoma'
+    Font.Style = [fsUnderline]
+    ParentFont = False
+    OnClick = Label6Click
+  end
   object GroupBox1: TGroupBox
     Left = 9
     Top = 7
     Width = 429
-    Height = 129
+    Height = 114
     Caption = '                                      '
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWhite
@@ -604,9 +618,9 @@ object Form1: TForm1
     end
     object btnlogmein: TButton
       Left = 16
-      Top = 40
+      Top = 25
       Width = 233
-      Height = 65
+      Height = 32
       Caption = 'LogMeIn/Support.me'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
@@ -619,9 +633,9 @@ object Form1: TForm1
     end
     object btnteamviewer: TButton
       Left = 255
-      Top = 40
+      Top = 25
       Width = 160
-      Height = 65
+      Height = 32
       Caption = 'TeamViewer'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
@@ -632,10 +646,55 @@ object Form1: TForm1
       TabOrder = 1
       OnClick = btnteamviewerClick
     end
+    object btnanydesk: TButton
+      Left = 16
+      Top = 63
+      Width = 114
+      Height = 34
+      Caption = 'AnyDesk'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWhite
+      Font.Height = -21
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 2
+      OnClick = btnanydeskClick
+    end
+    object btngotoassist: TButton
+      Left = 136
+      Top = 63
+      Width = 113
+      Height = 34
+      Caption = 'GotoAssist'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWhite
+      Font.Height = -21
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 3
+      OnClick = btngotoassistClick
+    end
+    object btnothermethod: TButton
+      Left = 255
+      Top = 63
+      Width = 160
+      Height = 34
+      Caption = 'Other Method'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWhite
+      Font.Height = -21
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 4
+      OnClick = btnothermethodClick
+    end
   end
   object GroupBox2: TGroupBox
-    Left = 9
-    Top = 143
+    Left = 8
+    Top = 127
     Width = 429
     Height = 129
     Caption = '                                                 '
@@ -730,10 +789,10 @@ object Form1: TForm1
     end
   end
   object GroupBox3: TGroupBox
-    Left = 9
-    Top = 288
+    Left = 8
+    Top = 262
     Width = 429
-    Height = 129
+    Height = 137
     Caption = '                         '
     TabOrder = 2
     object Label3: TLabel
@@ -824,35 +883,210 @@ object Form1: TForm1
       TabOrder = 4
       OnClick = btncmdClick
     end
-    object btniexplorersupport: TButton
+    object btncontrol: TButton
       Left = 95
       Top = 63
-      Width = 320
-      Height = 26
-      Caption = 'iexplorer www.support.me'
+      Width = 82
+      Height = 58
+      Caption = 'Control'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -17
+      Font.Height = -24
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
       TabOrder = 5
-      OnClick = btniexplorersupportClick
+      OnClick = btncontrolClick
     end
-    object btniexplorerlogmein: TButton
-      Left = 95
-      Top = 95
-      Width = 320
-      Height = 25
-      Caption = 'iexplorer www.logmein123.com'
+    object btnother2: TButton
+      Left = 183
+      Top = 63
+      Width = 232
+      Height = 58
+      Caption = 'OTHER'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -17
+      Font.Height = -21
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
       TabOrder = 6
-      OnClick = btniexplorerlogmeinClick
+      OnClick = btnother2Click
+    end
+  end
+  object GroupBox4: TGroupBox
+    Left = 453
+    Top = 8
+    Width = 430
+    Height = 113
+    Caption = '                   '
+    TabOrder = 3
+    object Label11: TLabel
+      Left = 16
+      Top = -6
+      Width = 40
+      Height = 25
+      Caption = 'Misc'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWhite
+      Font.Height = -21
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+    object btnstoppedservices: TButton
+      Left = 16
+      Top = 24
+      Width = 193
+      Height = 32
+      Caption = 'Stopped Services'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -21
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 0
+      OnClick = btnstoppedservicesClick
+    end
+    object btninstallprograms: TButton
+      Left = 215
+      Top = 24
+      Width = 202
+      Height = 32
+      Caption = 'Installing Programs'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -21
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 1
+      OnClick = btninstallprogramsClick
+    end
+    object btnsmalltalk: TButton
+      Left = 16
+      Top = 62
+      Width = 273
+      Height = 34
+      Caption = 'He/She is making small talk'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -21
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 2
+      OnClick = btnsmalltalkClick
+    end
+    object btnother3: TButton
+      Left = 295
+      Top = 62
+      Width = 122
+      Height = 34
+      Caption = 'Other'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -21
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 3
+      OnClick = btnother3Click
+    end
+  end
+  object GroupBox5: TGroupBox
+    Left = 453
+    Top = 127
+    Width = 430
+    Height = 129
+    Caption = '                                    '
+    TabOrder = 4
+    object Label12: TLabel
+      Left = 11
+      Top = 0
+      Width = 96
+      Height = 19
+      Caption = 'Stuff they say'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWhite
+      Font.Height = -16
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+    object btnnetworkinfected: TButton
+      Left = 16
+      Top = 25
+      Width = 193
+      Height = 40
+      Caption = '"Network Infected!"'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -21
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 0
+      OnClick = btnnetworkinfectedClick
+    end
+    object btnwarranty: TButton
+      Left = 15
+      Top = 71
+      Width = 210
+      Height = 41
+      Caption = '5/3/other Year warranty'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -19
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 1
+      OnClick = btnwarrantyClick
+    end
+    object btnomg: TButton
+      Left = 215
+      Top = 24
+      Width = 98
+      Height = 41
+      Caption = '"OMG"'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -21
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 2
+      OnClick = btnomgClick
+    end
+    object Button1: TButton
+      Left = 231
+      Top = 71
+      Width = 186
+      Height = 42
+      Caption = '"One Time/Small Fee"'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 3
+    end
+    object other5: TButton
+      Left = 319
+      Top = 24
+      Width = 98
+      Height = 41
+      Caption = 'Other'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -21
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 4
     end
   end
 end

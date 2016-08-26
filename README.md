@@ -5,10 +5,12 @@ Scammer Bingo Plus is a little game that you play while your'e in a call with a 
 When the scammer says or do one of the things in the list press the button that corresponds with what they do or say.
 
 ##Changelog
-- Added AnyDesk and GotoAssist buttons.
+- Added a lot of buttons.
+- Added a pleace where you can take notes.
+- Added my YouTube link.
 
 ##ToDo List
-- Add more buttons
+- Nothing at the moment.
 
 ##Preview 
 Please note that the picture might not be updated to the current version!
