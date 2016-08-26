@@ -6,7 +6,7 @@ When the scammer says or do one of the things in the list press the button that 
 
 ##Changelog
 - Added a lot of buttons.
-- Added a pleace where you can take notes.
+- Added a place where you can take notes.
 - Added my YouTube link.
 
 ##ToDo List
