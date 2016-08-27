@@ -4,7 +4,8 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, ShellAPI, StdCtrls;
+  Dialogs, ShellAPI, StdCtrls, ComCtrls, PlatformDefaultStyleActnCtrls, Menus,
+  ActnPopup;
 
 type
   TForm1 = class(TForm)
@@ -49,7 +50,15 @@ type
     Label12: TLabel;
     btnnetworkinfected: TButton;
     btnwarranty: TButton;
-    Button2: TButton;
+    btnomg: TButton;
+    btnsmallfee: TButton;
+    btnother5: TButton;
+    GroupBox6: TGroupBox;
+    Label13: TLabel;
+    redfont: TRichEdit;
+    Label14: TLabel;
+    Button1: TButton;
+    rednotes: TRichEdit;
     procedure Label4Click(Sender: TObject);
     procedure btnlogmeinClick(Sender: TObject);
     procedure btnteamviewerClick(Sender: TObject);
@@ -73,12 +82,19 @@ type
     procedure btninstallprogramsClick(Sender: TObject);
     procedure btnnetworkinfectedClick(Sender: TObject);
     procedure btnwarrantyClick(Sender: TObject);
+    procedure btnsmalltalkClick(Sender: TObject);
+    procedure btnother3Click(Sender: TObject);
+    procedure btnomgClick(Sender: TObject);
+    procedure btnsmallfeeClick(Sender: TObject);
+    procedure btnother5Click(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
   public
   github : String;
   youtube : String;
   icore : integer;
+  font : integer;
   end;
 
 var
@@ -172,9 +188,23 @@ begin
   lblscore.Caption := inttostr(icore);
 end;
 
+procedure TForm1.btnomgClick(Sender: TObject);
+begin
+  btnomg.Enabled := False;
+  inc(icore);
+  lblscore.Caption := inttostr(icore);
+end;
+
 procedure TForm1.btnother2Click(Sender: TObject);
 begin
   btnother2.Enabled := False;
+  inc(icore);
+  lblscore.Caption := inttostr(icore);
+end;
+
+procedure TForm1.btnother3Click(Sender: TObject);
+begin
+  btnother3.Enabled := False;
   inc(icore);
   lblscore.Caption := inttostr(icore);
 end;
@@ -221,9 +251,29 @@ begin
   lblscore.Caption := inttostr(icore);
 end;
 
+procedure TForm1.Button1Click(Sender: TObject);
+begin
+  font := redfont.Text;
+  rednotes.Font.Size := font;
+end;
+
+procedure TForm1.btnsmallfeeClick(Sender: TObject);
+begin
+  btnsmallfee.Enabled := False;
+  inc(icore);
+  lblscore.Caption := inttostr(icore);
+end;
+
 procedure TForm1.btnwarrantyClick(Sender: TObject);
 begin
   btnwarranty.Enabled := False;
+  inc(icore);
+  lblscore.Caption := inttostr(icore);
+end;
+
+procedure TForm1.btnsmalltalkClick(Sender: TObject);
+begin
+  btnsmalltalk.Enabled := False;
   inc(icore);
   lblscore.Caption := inttostr(icore);
 end;
@@ -245,6 +295,13 @@ procedure TForm1.Label6Click(Sender: TObject);
 begin
   youtube := 'https://youtube.com/Inforcer25';
   ShellExecute(Application.Handle, PChar('open'), PChar(youtube), nil, nil, SW_SHOW);
+end;
+
+procedure TForm1.btnother5Click(Sender: TObject);
+begin
+  btnother5.Enabled := False;
+  inc(icore);
+  lblscore.Caption := inttostr(icore);
 end;
 
 end.

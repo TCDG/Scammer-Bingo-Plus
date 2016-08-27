@@ -4,7 +4,8 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, ShellAPI, StdCtrls, ComCtrls;
+  Dialogs, ShellAPI, StdCtrls, ComCtrls, PlatformDefaultStyleActnCtrls, Menus,
+  ActnPopup;
 
 type
   TForm1 = class(TForm)
@@ -54,7 +55,12 @@ type
     btnother5: TButton;
     GroupBox6: TGroupBox;
     Label13: TLabel;
-    RichEdit1: TRichEdit;
+    Label14: TLabel;
+    Button1: TButton;
+    rednotes: TRichEdit;
+    edtfont: TEdit;
+    Label15: TLabel;
+    Label16: TLabel;
     procedure Label4Click(Sender: TObject);
     procedure btnlogmeinClick(Sender: TObject);
     procedure btnteamviewerClick(Sender: TObject);
@@ -83,12 +89,16 @@ type
     procedure btnomgClick(Sender: TObject);
     procedure btnsmallfeeClick(Sender: TObject);
     procedure btnother5Click(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
+    procedure Label16Click(Sender: TObject);
   private
     { Private declarations }
   public
   github : String;
   youtube : String;
   icore : integer;
+  font : String;
+  githubpage : String;
   end;
 
 var
@@ -245,6 +255,12 @@ begin
   lblscore.Caption := inttostr(icore);
 end;
 
+procedure TForm1.Button1Click(Sender: TObject);
+begin
+  font := edtfont.Text;
+  rednotes.Font.Size := strtoint(font);
+end;
+
 procedure TForm1.btnsmallfeeClick(Sender: TObject);
 begin
   btnsmallfee.Enabled := False;
@@ -271,6 +287,12 @@ begin
   btnstoppedservices.Enabled := False;
   inc(icore);
   lblscore.Caption := inttostr(icore);
+end;
+
+procedure TForm1.Label16Click(Sender: TObject);
+begin
+  githubpage := 'https://github.com/TCDG/Scammer-Bingo-Plus';
+  ShellExecute(Application.Handle, PChar('open'), PChar(githubpage), nil, nil, SW_SHOW);
 end;
 
 procedure TForm1.Label4Click(Sender: TObject);

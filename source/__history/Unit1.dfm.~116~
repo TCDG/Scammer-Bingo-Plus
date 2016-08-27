@@ -3,7 +3,7 @@ object Form1: TForm1
   Top = 0
   BorderIcons = [biSystemMenu, biMinimize]
   Caption = 'Scammer Bingo Plus'
-  ClientHeight = 464
+  ClientHeight = 484
   ClientWidth = 891
   Color = clHotLight
   Font.Charset = DEFAULT_CHARSET
@@ -503,7 +503,7 @@ object Form1: TForm1
     OnClick = Label4Click
   end
   object Label5: TLabel
-    Left = 371
+    Left = 364
     Top = 423
     Width = 76
     Height = 33
@@ -516,7 +516,7 @@ object Form1: TForm1
     ParentFont = False
   end
   object lblscore: TLabel
-    Left = 453
+    Left = 446
     Top = 423
     Width = 15
     Height = 33
@@ -529,7 +529,7 @@ object Form1: TForm1
     ParentFont = False
   end
   object Label7: TLabel
-    Left = 489
+    Left = 482
     Top = 423
     Width = 10
     Height = 33
@@ -542,11 +542,11 @@ object Form1: TForm1
     ParentFont = False
   end
   object Label8: TLabel
-    Left = 505
+    Left = 498
     Top = 423
     Width = 30
     Height = 33
-    Caption = '16'
+    Caption = '26'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWhite
     Font.Height = -27
@@ -1060,5 +1060,111 @@ object Form1: TForm1
       TabOrder = 2
       OnClick = btnomgClick
     end
+    object btnsmallfee: TButton
+      Left = 231
+      Top = 71
+      Width = 186
+      Height = 42
+      Caption = '"One Time/Small Fee"'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 3
+      OnClick = btnsmallfeeClick
+    end
+    object btnother5: TButton
+      Left = 319
+      Top = 24
+      Width = 98
+      Height = 41
+      Caption = 'Other'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -21
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 4
+      OnClick = btnother5Click
+    end
+  end
+  object GroupBox6: TGroupBox
+    Left = 453
+    Top = 262
+    Width = 430
+    Height = 137
+    Caption = '                      '
+    TabOrder = 5
+    object Label13: TLabel
+      Left = 16
+      Top = 0
+      Width = 52
+      Height = 25
+      Caption = 'Notes'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWhite
+      Font.Height = -21
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label14: TLabel
+      Left = 369
+      Top = 24
+      Width = 58
+      Height = 16
+      Caption = 'Font Size:'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWhite
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+    object rednotes: TRichEdit
+      Left = 16
+      Top = 31
+      Width = 346
+      Height = 97
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 0
+    end
+    object Button1: TButton
+      Left = 368
+      Top = 73
+      Width = 59
+      Height = 32
+      Caption = 'Set'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 1
+      OnClick = Button1Click
+    end
+  end
+  object edtfont: TEdit
+    Left = 832
+    Top = 308
+    Width = 38
+    Height = 27
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 6
+    Text = '8'
   end
 end

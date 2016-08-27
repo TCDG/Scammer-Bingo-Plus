@@ -504,7 +504,7 @@ object Form1: TForm1
   end
   object Label5: TLabel
     Left = 364
-    Top = 423
+    Top = 405
     Width = 76
     Height = 33
     Caption = 'Score:'
@@ -517,7 +517,7 @@ object Form1: TForm1
   end
   object lblscore: TLabel
     Left = 446
-    Top = 423
+    Top = 405
     Width = 15
     Height = 33
     Caption = '0'
@@ -530,7 +530,7 @@ object Form1: TForm1
   end
   object Label7: TLabel
     Left = 482
-    Top = 423
+    Top = 405
     Width = 10
     Height = 33
     Caption = '/'
@@ -543,7 +543,7 @@ object Form1: TForm1
   end
   object Label8: TLabel
     Left = 498
-    Top = 423
+    Top = 405
     Width = 30
     Height = 33
     Caption = '26'
@@ -559,7 +559,7 @@ object Form1: TForm1
     Top = 444
     Width = 92
     Height = 16
-    Caption = 'Version: 1.0.0.3'
+    Caption = 'Version: 1.0.0.4'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWhite
     Font.Height = -13
@@ -594,6 +594,36 @@ object Form1: TForm1
     Font.Style = [fsUnderline]
     ParentFont = False
     OnClick = Label6Click
+  end
+  object Label15: TLabel
+    Left = 232
+    Top = 443
+    Width = 428
+    Height = 14
+    Caption = 
+      'Want me to add something? Post it on the issues section of the g' +
+      'ithub page.'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWhite
+    Font.Height = -12
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label16: TLabel
+    Left = 666
+    Top = 442
+    Width = 68
+    Height = 14
+    Cursor = crHandPoint
+    Caption = 'GitHub Page'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clAqua
+    Font.Height = -12
+    Font.Name = 'Tahoma'
+    Font.Style = [fsUnderline]
+    ParentFont = False
+    OnClick = Label16Click
   end
   object GroupBox1: TGroupBox
     Left = 9
@@ -1111,11 +1141,24 @@ object Form1: TForm1
       Font.Style = []
       ParentFont = False
     end
-    object RichEdit1: TRichEdit
-      Left = 16
-      Top = 24
-      Width = 401
-      Height = 97
+    object Label14: TLabel
+      Left = 357
+      Top = 21
+      Width = 70
+      Height = 19
+      Caption = 'Font Size:'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWhite
+      Font.Height = -16
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+    object rednotes: TRichEdit
+      Left = 17
+      Top = 31
+      Width = 334
+      Height = 90
       Font.Charset = ANSI_CHARSET
       Font.Color = clWindowText
       Font.Height = -11
@@ -1124,5 +1167,34 @@ object Form1: TForm1
       ParentFont = False
       TabOrder = 0
     end
+    object Button1: TButton
+      Left = 357
+      Top = 79
+      Width = 59
+      Height = 32
+      Caption = 'Set'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 1
+      OnClick = Button1Click
+    end
+  end
+  object edtfont: TEdit
+    Left = 818
+    Top = 308
+    Width = 38
+    Height = 27
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 6
+    Text = '8'
   end
 end
