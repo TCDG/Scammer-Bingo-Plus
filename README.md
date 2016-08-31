@@ -5,13 +5,14 @@ Scammer Bingo Plus is a little game that you play while your'e in a call with a 
 When the scammer says or do one of the things in the list press the button that corresponds with what they do or say.
 
 ##Changelog
-- Added font size for the notes.
-- Added a note that says you can request at the issues page.
+- Moved YouTube link to the right.
+- Changed default notepad font from 8 to 12.
 
 ##ToDo List
-- Nothing at the moment.
+- Add tools.
+- Add TABS
 
 ##Preview 
 Please note that the picture might not be updated to the current version!
 
-![Alt text](http://i.imgur.com/NNq81Zz.png "Screenshot")
+![Alt text](http://i.imgur.com/luupixG.png "Screenshot")

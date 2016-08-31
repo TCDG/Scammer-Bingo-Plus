@@ -559,7 +559,7 @@ object Form1: TForm1
     Top = 444
     Width = 92
     Height = 16
-    Caption = 'Version: 1.0.0.4'
+    Caption = 'Version: 1.0.0.5'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWhite
     Font.Height = -13
@@ -581,7 +581,7 @@ object Form1: TForm1
     ParentFont = False
   end
   object Label6: TLabel
-    Left = 116
+    Left = 777
     Top = 405
     Width = 106
     Height = 33
@@ -1161,7 +1161,7 @@ object Form1: TForm1
       Height = 90
       Font.Charset = ANSI_CHARSET
       Font.Color = clWindowText
-      Font.Height = -11
+      Font.Height = -16
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
@@ -1193,8 +1193,9 @@ object Form1: TForm1
     Font.Height = -16
     Font.Name = 'Tahoma'
     Font.Style = []
+    NumbersOnly = True
     ParentFont = False
     TabOrder = 6
-    Text = '8'
+    Text = '12'
   end
 end
