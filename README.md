@@ -9,8 +9,7 @@ When the scammer says or do one of the things in the list press the button that 
 - Changed default notepad font from 8 to 12.
 
 ##ToDo List
-- Add tools.
-- Add TABS
+- (This projects is unmaintained. Use this project instead [Scammer ToolBox](https://github.com/TCDG/Scammer-ToolBox))
 
 ##Preview 
 Please note that the picture might not be updated to the current version!
